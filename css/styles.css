@@ -40,7 +40,7 @@ body, p {
 }
 
 .p-large {
-	color: #f1f1f8;
+	color: #ffffff;
 	font: 400 1rem/1.5rem "Open Sans", sans-serif;
 }
 
@@ -68,7 +68,7 @@ h1 {
 }
 
 h2 {
-	color: #f1f1f8;
+	color: #ffffff;
 	font: 700 2.25rem/2.75rem "Montserrat", sans-serif;
 }
 
@@ -625,15 +625,14 @@ input[type='checkbox'] {
 /*     03. Navigation     */
 /**************************/
 .navbar-custom {
-	background-color: #4633af;
+	background-color: #2978ff;
 	box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
 	font: 700 0.75rem/2rem "Montserrat", sans-serif;
 	transition: all 0.2s;
 }
 
 .navbar-custom .navbar-brand.logo-image img {
-    width: 113px;
-	height: 34px;
+    width: 100%;
 	margin-bottom: 1px;
 	-webkit-backface-visibility: hidden;
 }
@@ -846,9 +845,7 @@ input[type='checkbox'] {
 /*     05. Features     */
 /************************/
 .tabs {
-	padding-top: 6.5rem;
-	padding-bottom: 4.25rem;
-	background-color: #2f2c3d;
+	background-color: #ffffff;
 }
 
 .tabs h2 {
@@ -882,9 +879,9 @@ input[type='checkbox'] {
 
 .tabs .nav-link.active,
 .tabs .nav-link:hover {
-	border-bottom: 0.1875rem solid #00c9db;
+	border-bottom: 0.1875rem solid #2978ff;
 	background-color: transparent;
-	color: #00c9db;
+	color: #2978ff;
 }
 
 .tabs .nav-link .fas {
@@ -1435,13 +1432,13 @@ a.back-to-top {
 	width: 2.625rem;
 	height: 2.625rem;
 	border-radius: 1.875rem;
-	background: #00c9db url("../images/up-arrow.png") no-repeat center 47%;
+	background: #2978ff url("../images/up-arrow.png") no-repeat center 47%;
 	background-size: 1.125rem 1.125rem;
 	text-indent: -9999px;
 }
 
 a:hover.back-to-top {
-	background-color: #36edfd; 
+	background-color: #296cc3; 
 }
 
 
@@ -1965,7 +1962,7 @@ a:hover.back-to-top {
 
 	/* Features */
 	.tabs {
-		padding-bottom: 6.5rem;
+		padding-bottom: 0rem;
 	}
 
 	.tabs #tab-1 .card.first {
@@ -2087,5 +2084,113 @@ a:hover.back-to-top {
 		margin-left: 1.75rem;
 	}
 	/* end of extra pages */
+}
+
+.sidebar {
+  width: 60%;
+  height: 100vh;
+  min-height: 200px;
+  overflow: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 67px;
+  background-color: #ffffff;
+}
+
+.custom-sidebar {
+	background-color: #ff8f00;
+}
+
+.custom-sidebar h1 {
+	color: white;
+}
+
+.sidebar h1 {
+	margin-bottom: 40px;
+	color: #2978ff; 
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main,
+.sidebar {
+  color: #222222;
+  padding: 80px;
+}
+
+.custom-content h2 {
+	color: #2978ff;
+	text-align: left;
+	font-weight: 200;
+}
+
+.custom-list a{
+	text-decoration: none !important;
+	background-color: transparent !important;
+	border: none !important;
+	color: #296cc3;
+	font-weight: bold;
+	padding-left: 0;
+}
+
+.custom-row {
+	padding-bottom: 80px;
+}
+
+.custom-row h3,p {
+	color: #383a40;
+}
+
+.custom-download {
+	padding-top: 50px;
+}
+
+.custom-download a {
+	text-decoration: none;
+}
+
+.custom-left {
+	width: 30px;
+}
+
+.custom-download button {
+	background-color: #2978ff;
+	border: none;
+}
+
+.custom-container {
+	padding-left: 0 !important;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+@media (max-width: 760px) {
+	.wrapper {flex-wrap: wrap}
+}
+
+body {
+  background-color: #ccc;
+  font-size: 20px;
+  box-sizing: border-box;
+  font-family: Lato, sans-serif;
+}
+
+code, pre {
+  background-color: #ccc;
+  padding: 0 3px;
+  border-radius: 5px;
+}
+
+.bottom {
+  justify-self: bottom;
 }
 /* end of min-width width 1200px */
