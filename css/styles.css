@@ -2094,11 +2094,11 @@ a:hover.back-to-top {
   position: -webkit-sticky;
   position: sticky;
   top: 67px;
-  background-color: #ffffff;
+  background-color: #f4f8ff;
 }
 
 .custom-sidebar {
-	background-color: #ff8f00;
+	background-color: #a9c9ff;
 }
 
 .custom-sidebar h1 {
@@ -2123,10 +2123,10 @@ a:hover.back-to-top {
   padding: 80px;
 }
 
-.custom-content h2 {
+.custom-content h1 {
 	color: #2978ff;
 	text-align: left;
-	font-weight: 200;
+	font-weight: 800;
 }
 
 .custom-list a{
