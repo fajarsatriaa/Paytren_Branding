@@ -2139,11 +2139,54 @@ a:hover.back-to-top {
 }
 
 .custom-row {
-	padding-bottom: 80px;
+	padding-bottom: 40px;
 }
 
 .custom-row h3,p {
 	color: #383a40;
+}
+
+.custom-row p {
+	margin: 0rem;
+}
+
+.custom-row .regular {
+	color: #383A40;
+	text-align: left;
+	font-family: firaRegular;
+	font-size: 24pt;
+	margin-bottom: 2rem;
+}
+
+.custom-row .italic {
+	color: #383A40;
+	text-align: left;
+	font-family: firaItalic;
+	font-size: 24pt;
+	margin-bottom: 2rem;
+}
+
+.custom-row .semibold {
+	color: #383A40;
+	text-align: left;
+	font-family: firaSemibold;
+	font-size: 24pt;
+	margin-bottom: 2rem;
+}
+
+@font-face {
+	font-family: 'firaRegular';
+	src: url('../webfonts/FiraSans-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'firaItalic';
+	src: url('../webfonts/FiraSans-Italic.ttf');
+}
+
+@font-face {
+	font-family: 'firaSemibold';
+	src: url('../webfonts/FiraSans-SemiBold.ttf');
 }
 
 .custom-download {
@@ -2163,8 +2206,30 @@ a:hover.back-to-top {
 	border: none;
 }
 
+.custom-col {
+	padding-bottom: 30px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+.custom-col h5 {
+	color: #383A40;
+}
+
+.custom-col p {
+	margin: 0rem;
+}
+
 .custom-container {
 	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.kotak {
+	width: 100px;
+	height: 100px;
+	border-radius: 4px;
+	margin: 0px 10px 10px 10px;
 }
 
 .wrapper {
@@ -2173,8 +2238,9 @@ a:hover.back-to-top {
   
 }
 
-@media (max-width: 760px) {
+@media (max-width: 1050px) {
 	.wrapper {flex-wrap: wrap}
+	.sidebar {width: 100%; position: relative; height: auto;}
 }
 
 body {
